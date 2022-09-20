@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +10,7 @@
 </head>
 <body background="assets/pic.jpg">
     <div class="form">
-        <form action="" method="post" name="myform"  autocomplete="off" onsubmit="return Validate()">
+        <form action="" method="post" name="myform"  autocomplete="off" onsubmit="Validate()">
             <label for="search">
                 Search
                 <input type="search" name="search">
@@ -27,7 +28,7 @@
             <div id="name_div">
                 <label>
                     Name
-                    <input type="text" name="user"><br>
+                    <input type="text" name="username"><br>
                 </label>
                 <div id="name_error"></div>
             </div>
@@ -204,7 +205,6 @@
                     <input type="image" src="assets/submit.png" alt="Submit" width="48" height="48">
                 </label><br>
             </div>
-            <input type="hidden" name="hidden" value="3487"><br>
             <input type="submit" name="submit" value="Submit">
            <!--<input type="reset" name="reset" value="Clear">
             <input type="button" onclick="alert('Welcome to this web page')" value="Click Me!">-->
