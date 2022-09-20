@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.form{
+    border-top: 2px;
+    border-left: 2px;
+    border-bottom:2px;
+    border-right: 2px;
+    border-radius: 8px;
+    border: transparent;
+    width: 500px;
+    background-color: rgba(109, 101, 101, 0.3);
+    margin: 80px 0px 100px 500px;
+    box-shadow: 0 0 15px rgb(97, 95, 95);
+    color: rgb(0, 0, 0);
+    padding: 30px;
+}
+
+input{
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: rgb(231, 226, 220);
+}
+
+.salutation{
+    padding: 5px;
+    margin: 20px 10px;
+    width: 130px;
+    border-radius: 4px;
+    border: 2px solid rgb(187, 180, 180);
+    background-color: rgb(231, 226, 220);
+}
+
+input[type=text] {
+    border-radius: 4px;
+    border: 2px solid rgb(187, 180, 180);
+    width: 445px;
+    margin-left: 10px;
+}
+
+input[type=search]{
+    padding-left: 40px;
+    width: 440px;
+    border-radius: 4px;
+    border: 2px solid rgb(187, 180, 180);
+    margin-left: 10px;
+}
+
+.gender label{
+    margin-left: 15px;
+}
+
+.address{
+    margin-top: 10px;
+}
+
+textarea{
+    border-radius: 4px;
+    border: 2px solid rgb(187, 180, 180);
+    width: 100%;
+    margin-top: 5px;
+    background-color: rgb(231, 226, 220);
+}
+
+input[type=date]{
+    border-radius: 4px;
+    border: 2px solid rgb(187, 180, 180);
+    margin-left: 10px;
+    width: 200px;
+}
+
+.age, .check{
+    margin-top: 15px;
+}
+
+.age label, .check label{
+    margin-left: 20px;
+}
+
+input[type=radio]{
+    accent-color: rgb(12, 64, 236);
+}
+
+input[type=email]{
+    border-radius: 4px;
+    border: 2px solid rgb(187, 180, 180);
+    margin: 0px 0px 10px 10px;
+    width: 445px;
+}
+
+input[type=password]{
+    border-radius: 4px;
+    width: 420px;
+    border: 2px solid rgb(187, 180, 180);
+    margin: 0px 0px 10px 10px;
+}
+
+input[type=number], input[type=tel]{
+    border-radius: 4px;
+    border: 2px solid rgb(187, 180, 180);
+    margin: 0px 0px 10px 10px;
+    width: 380px;
+}
+
+.qualification{
+    padding: 5px;
+    margin: 10px 10px;
+    background-color: rgb(231, 226, 220);
+    width: 390px;
+    border-radius: 4px;
+    border: 2px solid rgb(187, 180, 180);
+}
+
+input[type=range]{
+    margin: 10px 0px 10px 10px;
+    accent-color: rgb(32, 80, 238);
+}
+
+input[type=month],input[type=week],input[type=datetime-local]{
+    border-radius: 4px;
+    border: 2px solid rgb(187, 180, 180);
+    margin:10px;
+    width: 200px;    
+}
+
+input[type=url]{
+    border-radius: 4px;
+    border: 2px solid rgb(187, 180, 180);
+    margin:10px;
+    width: 395px;
+}
+
+input[type=datetime]{
+    border-radius: 4px;
+    border: 2px solid rgb(187, 180, 180);
+    margin:10px;
+}
+
+.proof{
+    margin-top: 10px;
+}
+
+.proof label{
+    margin-left: 10px;
+}
+
+.proof input{
+    margin-right: 10px;
+}
+
+.upload{
+    border-top: 2px solid rgb(184, 177, 177);
+    border-left: 2px solid rgb(184, 177, 177);
+    border-bottom:2px solid rgb(184, 177,177);
+    border-right: 2px solid rgb(184, 177, 177);
+    border-radius: 3px;
+    padding: 10px;
+    margin: 20px 0px 10px 0px;
+}
+
+.upload input{
+    margin:50px 110px;
+    background-color: transparent;
+}
+
+input[type=file]{
+    padding: 10px;
+}
+
+input[type=color]{
+    width:25px;
+}
+
+input[type=button], input[type=submit], input[type=reset]{
+    border-top: 2px;
+    border-left: 2px;
+    border-bottom:2px;
+    border-right: 2px;
+    border-radius: 5px;
+    width:100px;
+    margin: 0px 10px;
+    padding: 15px;
+    border: transparent;
+    color:white;
+    font-size: 15px;
+    background-color: rgb(6, 110, 247);
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
+    background-color: rgb(0, 26, 255);
+}
+
+input[type=submit]{
+    margin-left: 75px;
+}
+
+.name_error, .address_error, .email_error, .tel_error {
+    margin:10px 0px 5px 200px;
+    color: rgb(247, 21, 21);
+    visibility: hidden;
+}
+
+.required_error, .week_error, .local_error{
+    position: absolute;
+    margin:-34px 0px 0px 250px;
+    color: rgb(247, 21, 21);
+    visibility: hidden;
+}
+
+.date_error{
+    margin:0px 0px 5px 80px;
+    color: rgb(247, 21, 21);
+    visibility: hidden;
+}
+
+.pswd_error{
+    margin: 0px 0px 5px 270px;
+    color: rgb(247, 21, 21);
+    visibility: hidden;
+}
+
+.number_error{
+    margin: 0px 0px 5px 245px;
+    color: rgb(247, 21, 21);
+    visibility: hidden; 
+}
+
+.url_error{
+    margin: 0px 0px 5px 310px;
+    color: rgb(247, 21, 21);
+    visibility: hidden;
+}
+
+.datetime_error{
+    margin: 0px 0px 5px 110px;
+    color: rgb(247, 21, 21);
+    visibility: hidden;
+}
+
+.uploadfile_error{
+    margin: 0px 0px 5px 330px;
+    color: rgb(247, 21, 21);
+    visibility: hidden;
+}
+
+
+
