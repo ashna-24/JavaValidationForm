@@ -28,7 +28,7 @@ var uploadfile_error= document.getElementById('uploadfile_error');
 
 uname.addEventListner('blur', nameVerify, true);
 address.addEventListner('blur', addressVerify, true);
-dob.addEventListner('blur', dobVerify, true);
+dob.addEventListner('blur', dateVerify, true);
 email.addEventListner('blur', emailVerify, true);
 password.addEventListner('blur', passwordVerify, true);
 number.addEventListner('blur', numberVerify, true);
@@ -105,6 +105,78 @@ function Validate(){
         number.focus();
         return false;
     }
+
+    if(number.value.length<10){
+        number.style.border = "1px solid red";
+        document.getElementById('number_div').style.color="red";
+        number_error.textContent ="Number must need 10 digits";
+        number.focus();
+        return false;
+    }
+
+    if(telephone.value==""){
+        telephone.style.border="1px solid red";
+        document.getElementById('tel_div').style.color ="red";
+        tel_error.textContent="Tel. no. is Required";
+        telephone.focus();
+        return false;
+    }
+
+    if(telephone.value.length<10){
+        telephone.style.border = "1px solid red";
+        document.getElementById('tel_div').style.color="red";
+        tel_error.textContent ="Tel.no. must need 10 digits";
+        telephone.focus();
+        return false;
+    }
+
+    if(month.value==""){
+        month.style.border="1px solid red";
+        document.getElementById('month_div').style.color ="red";
+        required_error.textContent="Month is Required";
+        month.focus();
+        return false;
+    }
+
+    if(week.value==""){
+        week.style.border="1px solid red";
+        document.getElementById('week_div').style.color ="red";
+        week_error.textContent="Week is Required";
+        week.focus();
+        return false;
+    }
+
+    if(url.value==""){
+        url.style.border="1px solid red";
+        document.getElementById('url_div').style.color ="red";
+        url_error.textContent="URL is Required";
+        url.focus();
+        return false;
+    }
+
+    if(datetime.value==""){
+        datetime.style.border="1px solid red";
+        document.getElementById('datetime_div').style.color ="red";
+        datetime_error.textContent="Datetime is Required";
+        datetime.focus();
+        return false;
+    }
+
+    if(localdatetime.value==""){
+        localdatetime.style.border="1px solid red";
+        document.getElementById('local_div').style.color ="red";
+        local_error.textContent="Localdatetime is Required";
+        localdatetime.focus();
+        return false;
+    }
+
+    if(uploadfile.value==""){
+        uploadfile.style.border="1px solid red";
+        document.getElementById('upload_div').style.color ="red";
+        uploadfile_error.textContent="File is Required";
+        uploadfile.focus();
+        return false;
+    }
 }
 
 
@@ -112,6 +184,116 @@ function nameVerify(){
     if(uname.value!=""){
         uname.style.border="1px solid #5e6e66";
         document.getElementById('name_div').style.color="#5e6e66";
+        name_error.innerHTML="";
+        return true;
+    }
+}
+
+function addressVerify(){
+    if(address.value!=""){
+        address.style.border="1px solid #5e6e66";
+        document.getElementById('address_div').style.color="#5e6e66";
+        address_error.innerHTML="";
+        return true;
+    }
+}
+
+function dateVerify(){
+    if(dob.value!=""){
+        dob.style.border="1px solid #5e6e66";
+        document.getElementById('date_div').style.color="#5e6e66";
+        date_error.innerHTML="";
+        return true;
+    }
+}
+
+function emailVerify(){
+    if(email.value!=""){
+        email.style.border="1px solid #5e6e66";
+        document.getElementById('email_div').style.color="#5e6e66";
+        email_error.innerHTML="";
+        return true;
+    }
+}
+
+function passwordVerify(){
+    if(password.value!=""){
+        password.style.border="1px solid #5e6e66";
+        document.getElementById('password_div').style.color="#5e6e66";
+        pswd_error.innerHTML="";
+        return true;
+    }
+}
+
+function numberVerify(){
+    if(number.value!=""){
+        number.style.border="1px solid #5e6e66";
+        document.getElementById('number_div').style.color="#5e6e66";
+        number_error.innerHTML="";
+        return true;
+    }
+}
+
+function telephoneVerify(){
+    if(telephone.value!=""){
+        telephone.style.border="1px solid #5e6e66";
+        document.getElementById('tel_div').style.color="#5e6e66";
+        tel_error.innerHTML="";
+        return true;
+    }
+}
+
+function monthVerify(){
+    if(month.value!=""){
+        month.style.border="1px solid #5e6e66";
+        document.getElementById('month_div').style.color="#5e6e66";
+        required_error.innerHTML="";
+        return true;
+    }
+}
+
+function weekVerify(){
+    if(week.value!=""){
+        week.style.border="1px solid #5e6e66";
+        document.getElementById('week_div').style.color="#5e6e66";
+        week_error.innerHTML="";
+        return true;
+    }
+}
+
+function urlVerify(){
+    if(url.value!=""){
+        url.style.border="1px solid #5e6e66";
+        document.getElementById('url_div').style.color="#5e6e66";
+        url_error.innerHTML="";
+        return true;
+    }
+}
+
+function datetimeVerify(){
+    if(datetime.value!=""){
+        datetime.style.border="1px solid #5e6e66";
+        document.getElementById('datetime_div').style.color="#5e6e66";
+        datetime_error.innerHTML="";
+        return true;
+    }
+}
+
+function localdatetimeVerify(){
+    if(localdatetime.value!=""){
+        localdatetime.style.border="1px solid #5e6e66";
+        document.getElementById('local_div').style.color="#5e6e66";
+        local_error.innerHTML="";
+        return true;
+    }
+}
+
+function uploadfileVerify(){
+    if(uploadfile.value!=""){
+        uploadfile.style.border="1px solid #5e6e66";
+        document.getElementById('upload_div').style.color="#5e6e66";
+        uploadfile_error.innerHTML="";
+        return true;
     }
 }
 
