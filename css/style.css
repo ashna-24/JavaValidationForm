@@ -197,6 +197,7 @@ input[type=submit]{
 input[type=submit]:hover{
     background-color: rgb(0, 26, 255);
 }
+
 .name_error, .address_error, .email_error, .tel_error {
     margin:10px 0px 5px 200px;
     
@@ -229,6 +230,18 @@ input[type=submit]:hover{
 
 .uploadfile_error{
     margin: 0px 0px 5px 330px;
+}
+
+/*#form_control span{
+    visibility: hidden;
+}*/
+
+#form_control.success input{
+    border-color: 2px solid rgb(13, 97, 13);
+}
+
+#form_control.error input{
+    border-color: 2px solid red;
 }
 
 

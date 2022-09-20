@@ -1,215 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="/js/form.js"></script>
-    <title>Form</title>
-</head>
-<body background="assets/pic.jpg">
-    <div class="form">
-        <form action="" method="post" name="myform"  autocomplete="off" onsubmit="Validate()">
-            <label for="search">
-                Search
-                <input type="search" name="search">
-            </label><br>
-            <label> Salutation
-                <select class="salutation">
-                    <option>Select</option>
-                    <option>Mr.</option>
-                    <option>Ms.</option>
-                    <option>Mrs</option>
-                    <option>Dr.</option>
-                    <option>Prof.</option>
-              </select>
-            </label>
-            <div id="name_div">
-                <label>
-                    Name
-                    <input type="text" name="username"><br>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>Form</title>
+    </head>
+    <body background="assets/pic.jpg">
+        <div class="form">
+            <form action="" method="post" name="myform"  autocomplete="off" onsubmit="ValidateUserInputs()">
+                <label for="search">
+                    Search
+                    <input type="search" name="search">
+                </label><br>
+                <label for="salutation"> Salutation
+                    <select class="salutation">
+                        <option>Select</option>
+                        <option>Mr.</option>
+                        <option>Ms.</option>
+                        <option>Mrs</option>
+                        <option>Dr.</option>
+                        <option>Prof.</option>
+                    </select>
                 </label>
-                <div id="name_error"></div>
-            </div>
-            <div id="gender_div">
-                <div class="gender">
-                    Gender
-                    <label>
-                        <input type="radio" name="gender">
-                        Male
+                <div id="form_control">
+                    <label for="name">
+                        Name
+                        <input type="text" name="username"><br>
                     </label>
-                    <label>
-                        <input type="radio" name="gender">
-                        Female
-                    </label>
-                    <label>
-                        <input type="radio" name="gender">
-                        Others
-                    </label>
-                </div><br>
-            </div>
-            <div id="address_div">
-                <label class="address">
-                    Address<br>
-                    <textarea name="address" rows="5" cols="20"></textarea><br>
-                </label><br>
-                <div id="address_error"></div>
-            </div>
-            <div class="date_div">
-                <label for="dob">
-                    Date of Birth
-                    <input type="date" name="date">
-                </label><br>
-                <div id="date_error"></div>
-            </div>
-            <div id="age_div">
-                <div class="age">Age                
-                    <label>
-                        <input type="radio" name="age" value="18-24">
-                        18-24
-                    </label>          
-                    <label>
-                        <input type="radio" name="age" value="24-35">
-                        24-35
-                    </label>               
-                    <label>
-                        <input type="radio" name="age" value="35-50">
-                        35-50
-                    </label>                
-                    <label>
-                        <input type="radio" name="age" value="Above 50">
-                        Above 50
-                    </label>
-                </div><br>
-            </div>
-            <div id="email_div">
-                <label for="mail">
-                    Email
-                    <input type="email" name="email">
-                </label><br>
-                <div id="email_error"></div>
-            </div>
-            <div id="pswd_div">
-                <label for="password">
-                    Password
-                    <input type="password" name="password">
-                </label><br>
-                <div id="pswd_error"></div>
-            </div>
-            <div id="number_div">
-                <label for="number">
-                    Phone No.
-                    <input type="number" name="number" min="1" max="10">
-                </label><br>
-                <div id="number_error"></div>
-            </div>
-            <div id="tel_div">
-                <label for="tel">
-                    Telephone No.
-                    <input type="tel" name="telephone">
-                </label><br>
-                <div id="tel_error"></div>
-            </div>
-            <div id="qualification_div">
-                <label> Qualification
-                    <select class="qualification" name="study">
-                        <option>Select your Qualification</option>
-                        <option>Under Graduate</option>
-                        <option>Graduate</option>
-                        <option>Post Graduate</option>
-                        <option>Others</option>
-                </select>
-                </label><br>
-            </div>
-            <div id="experience_div">
-                <div class="check">Experienced
-                    <label>
-                        <input type="radio" name="experience" value="Yes">
-                        Yes
-                    </label>
-                    <label>
-                        <input type="radio" name="experience" value="No">
-                        No
-                    </label>
+                    <span class="name_error"></span>
                 </div>
-            </div>
-            <div id="range_div">
-                <label>
-                    Experience Range
-                    <input type="range" name="range" min="1" max="10">
-                </label><br>
-            </div>
-            <div id="month_div">
-                <label for="month">
-                    Joining Month
-                    <input type="month" name="month">
-                </label><br>
-                <div id="required_error"></div>
-            </div>
-            <div id="week_div">
-                <label for="week">
-                    Joining Week
-                    <input type="week" name="week">
-                </label><br>
-                <div id="week_error"></div>
-            </div>
-            <div id="url_div">
-                <label for="url">
-                    Github URL
-                    <input type="url" name="url">
-                </label><br>
-                <div id="url_error"></div>
-            </div>
-            <div id="datetime_div">
-                <label for="datetime">
-                    Date time
-                    <input type="datetime" name="datetime">
-                </label><br>
-                <div id="datetime_error"></div>
-            </div>
-            <div id="local_div">
-                <label for="local">
-                    Local Date Time
-                    <input type="datetime-local" name="localdatetime">
-                </label><br>
-                <div id="local_error"></div>
-            </div>
-            <div id="proof_div">
-                <div class="proof">
-                    Id Proof<br><br>
-                    <label><input type="checkbox" name="proof">Aadhar</label>
-                    <label><input type="checkbox" name="proof">License</label>
-                    <label><input type="checkbox" name="proof">Passport</label>
-                    <label><input type="checkbox" name="proof">Pan Card</label>
-                    <label><input type="checkbox" name="proof">Voter Id</label>
-                </div>
-            </div>
-            <div id="upload_div">
-                <label for="upload">
-                    <div class="upload">
-                        Upload valid Id proof<br>
-                        <input type="file" name="uploadfile">
+                <div id="form_control">
+                    <div class="gender">
+                        Gender
+                        <label for="male">
+                            <input type="radio" name="gender">
+                            Male
+                        </label>
+                        <label for="Female">
+                            <input type="radio" name="gender">
+                            Female
+                        </label>
+                        <label for="others">
+                            <input type="radio" name="gender">
+                            Others
+                        </label>
                     </div><br>
-                </label>
-                <div id="uploadfile"></div>
-            </div>
-            <div id="color_div">
-                <label>
-                    Select your favourite color
-                    <input type="color" name="color">
-                </label><br>
-            </div>
-            <div id="img_div">
-                <label>
-                    <input type="image" src="assets/submit.png" alt="Submit" width="48" height="48">
-                </label><br>
-            </div>
-            <input type="submit" name="submit" value="Submit">
-           <!--<input type="reset" name="reset" value="Clear">
-            <input type="button" onclick="alert('Welcome to this web page')" value="Click Me!">-->
-        </form>
-    </div>
-    
-</body>
+                </div>
+                <div id="form_control">
+                    <label for="address">
+                        Address<br>
+                        <textarea name="address" rows="5" cols="20"></textarea><br>
+                    </label><br>
+                    <span class="address_error"></span>
+                </div>
+                <div class="form_control">
+                    <label for="dob">
+                        Date of Birth
+                        <input type="date" name="date">
+                    </label><br>
+                    <span class="date_error"></span>
+                </div>
+                <div id="form_control">
+                    <div class="age">Age                
+                        <label for="18-24">
+                            <input type="radio" name="age" value="18-24">
+                            18-24
+                        </label>          
+                        <label for="24-35">
+                            <input type="radio" name="age" value="24-35">
+                            24-35
+                        </label>               
+                        <label for="35-50">
+                            <input type="radio" name="age" value="35-50">
+                            35-50
+                        </label>                
+                        <label for="Above 50">
+                            <input type="radio" name="age" value="Above 50">
+                            Above 50
+                        </label>
+                    </div><br>
+                </div>
+                <div id="form_control">
+                    <label for="mail">
+                        Email
+                        <input type="email" name="email">
+                    </label><br>
+                    <span class="email_error"></span>
+                </div>
+                <div id="form_control">
+                    <label for="password">
+                        Password
+                        <input type="password" name="password">
+                    </label><br>
+                    <span class="pswd_error"></span>
+                </div>
+                <div id="form_control">
+                    <label for="number">
+                        Phone No.
+                        <input type="number" name="number" min="1" max="10">
+                    </label><br>
+                    <span class="number_error"></span>
+                </div>
+                <div id="form_control">
+                    <label for="tel">
+                        Telephone No.
+                        <input type="tel" name="telephone">
+                    </label><br>
+                    <span class="tel_error"></span>
+                </div>
+                <div id="form_control">
+                    <label for="qualification"> Qualification
+                        <select class="qualification" name="study">
+                            <option>Select your Qualification</option>
+                            <option>Under Graduate</option>
+                            <option>Graduate</option>
+                            <option>Post Graduate</option>
+                            <option>Others</option>
+                        </select>
+                    </label><br>
+                </div>
+                <div id="form_control">
+                    <div class="check">Experienced
+                        <label for="yes">
+                            <input type="radio" name="experience" value="Yes">
+                            Yes
+                        </label>
+                        <label for="no">
+                            <input type="radio" name="experience" value="No">
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div id="form_control">
+                    <label for="range">
+                        Experience Range
+                        <input type="range" name="range" min="1" max="10">
+                    </label><br>
+                </div>
+                <div id="form_control">
+                    <label for="month">
+                        Joining Month
+                        <input type="month" name="month">
+                    </label><br>
+                    <span class="required_error"></span>
+                </div>
+                <div id="form_control">
+                    <label for="week">
+                        Joining Week
+                        <input type="week" name="week">
+                    </label><br>
+                    <span class="week_error"></span>
+                </div>
+                <div id="form_control">
+                    <label for="url">
+                        Github URL
+                        <input type="url" name="url">
+                    </label><br>
+                    <span class="url_error"></span>
+                </div>
+                <div id="form_control">
+                    <label for="datetime">
+                        Date time
+                        <input type="datetime" name="datetime">
+                    </label><br>
+                    <span class="datetime_error"></span>
+                </div>
+                <div id="form_control">
+                    <label for="local">
+                        Local Date Time
+                        <input type="datetime-local" name="localdatetime">
+                    </label><br>
+                    <span class="local_error"></span>
+                </div>
+                <div id="form_control">
+                    <div class="proof">
+                        Id Proof<br><br>
+                        <label for="aadhar">
+                            <input type="checkbox" name="proof">
+                            Aadhar
+                        </label>
+                        <label for="license">
+                            <input type="checkbox" name="proof">
+                            License
+                        </label>
+                        <label for="passport">
+                            <input type="checkbox" name="proof">
+                            Passport
+                        </label>
+                        <label for="pancard">
+                            <input type="checkbox" name="proof">
+                            Pan Card
+                        </label>
+                        <label for="voterid">
+                            <input type="checkbox" name="proof">
+                            Voter Id
+                        </label>
+                    </div>
+                </div>
+                <div id="form_control">
+                    <label for="upload">
+                        <div class="upload">
+                            Upload valid Id proof<br>
+                            <input type="file" name="uploadfile">
+                        </div><br>
+                    </label>
+                    <span class="uploadfile"></span>
+                </div>
+                <div id="form_control">
+                    <label for="color">
+                        Select your favourite color
+                        <input type="color" name="color">
+                    </label><br>
+                </div>
+                <div id="form_control">
+                    <label for="img">
+                        <input type="image" src="assets/submit.png" alt="Submit" width="48" height="48">
+                    </label><br>
+                </div>
+                <input type="submit" name="submit" value="Submit">
+                <!--<input type="reset" name="reset" value="Clear">
+                <input type="button" onclick="alert('Welcome to this web page')" value="Click Me!">-->
+            </form>
+        </div>        
+    </body>
+    <script src="/js/form.js"></script>
 </html>
