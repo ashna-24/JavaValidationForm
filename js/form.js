@@ -1,4 +1,5 @@
-var uname= document.forms['myform']['name'];
+
+var uname= document.forms['myform']['user'];
 var address= document.forms['myform']['address'];
 var dob= document.forms['myform']['date'];
 var email= document.forms["myform"]["email"];
