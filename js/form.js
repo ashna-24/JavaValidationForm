@@ -364,7 +364,6 @@ const emailvalue= document.querySelector('#email');
 const passwordvalue= document.querySelector('#password');
 const numbervalue=document.querySelector('#number');
 const telephonevalue= document.querySelector('#telephone');
-const qualifivalue= document.querySelector('#qualification');
 const monthvalue= document.querySelector('#month');
 const weekvalue= document.querySelector('#week');
 const urlvalue= document.querySelector('#url');
