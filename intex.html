@@ -28,9 +28,9 @@
                 <div id="form_control">
                     <label for="name">
                         Name
-                        <input type="text" name="username"><br>
+                        <input type="text" name="username" class="name"><br>
                     </label>
-                    <span class="name_error"></span>
+                    <span id="name_div">Name not found</span>
                 </div>
                 <div id="form_control">
                     <div class="gender">
@@ -52,16 +52,16 @@
                 <div id="form_control">
                     <label for="address">
                         Address<br>
-                        <textarea name="address" rows="5" cols="20"></textarea><br>
+                        <textarea name="address" rows="5" cols="20" class="address"></textarea><br>
                     </label><br>
-                    <span class="address_error"></span>
+                    <span id="address_div">Address not found</span>
                 </div>
                 <div class="form_control">
                     <label for="dob">
                         Date of Birth
-                        <input type="date" name="date">
+                        <input type="date" name="date" class="date">
                     </label><br>
-                    <span class="date_error"></span>
+                    <span id="date_div">DOB is not found</span>
                 </div>
                 <div id="form_control">
                     <div class="age">Age                
@@ -86,30 +86,30 @@
                 <div id="form_control">
                     <label for="mail">
                         Email
-                        <input type="email" name="email">
+                        <input type="email" name="email" class="email">
                     </label><br>
-                    <span class="email_error"></span>
+                    <span id="email_div">Email not found</span>
                 </div>
                 <div id="form_control">
                     <label for="password">
                         Password
-                        <input type="password" name="password">
+                        <input type="password" name="password" class="password">
                     </label><br>
-                    <span class="pswd_error"></span>
+                    <span id="pswd_div">Password not found</span>
                 </div>
                 <div id="form_control">
                     <label for="number">
                         Phone No.
-                        <input type="number" name="number" min="1" max="10">
+                        <input type="number" name="number" min="1" max="10" class="number">
                     </label><br>
-                    <span class="number_error"></span>
+                    <span id="number_div">Phone No. not found</span>
                 </div>
                 <div id="form_control">
                     <label for="tel">
                         Telephone No.
-                        <input type="tel" name="telephone">
+                        <input type="tel" name="telephone" class="telephone">
                     </label><br>
-                    <span class="tel_error"></span>
+                    <span id="tel_div">Telephone no.not found</span>
                 </div>
                 <div id="form_control">
                     <label for="qualification"> Qualification
@@ -143,37 +143,37 @@
                 <div id="form_control">
                     <label for="month">
                         Joining Month
-                        <input type="month" name="month">
+                        <input type="month" name="month" class="month">
                     </label><br>
-                    <span class="required_error"></span>
+                    <span id="required_div">Month not found</span>
                 </div>
                 <div id="form_control">
                     <label for="week">
                         Joining Week
-                        <input type="week" name="week">
+                        <input type="week" name="week" class="week">
                     </label><br>
-                    <span class="week_error"></span>
+                    <span id="week_div">Week not found</span>
                 </div>
                 <div id="form_control">
                     <label for="url">
                         Github URL
-                        <input type="url" name="url">
+                        <input type="url" name="url" class="url">
                     </label><br>
-                    <span class="url_error"></span>
+                    <span id="url_div">URL not found</span>
                 </div>
                 <div id="form_control">
                     <label for="datetime">
                         Date time
-                        <input type="datetime" name="datetime">
+                        <input type="datetime" name="datetime" class="datetime">
                     </label><br>
-                    <span class="datetime_error"></span>
+                    <span id="datetime_div">Datetime not found</span>
                 </div>
                 <div id="form_control">
                     <label for="local">
                         Local Date Time
-                        <input type="datetime-local" name="localdatetime">
+                        <input type="datetime-local" name="localdatetime" class="localdatetime">
                     </label><br>
-                    <span class="local_error"></span>
+                    <span id="local_div">Local Datetime not found</span>
                 </div>
                 <div id="form_control">
                     <div class="proof">
@@ -204,10 +204,10 @@
                     <label for="upload">
                         <div class="upload">
                             Upload valid Id proof<br>
-                            <input type="file" name="uploadfile">
+                            <input type="file" name="uploadfile" class="uploadfile">
                         </div><br>
                     </label>
-                    <span class="uploadfile"></span>
+                    <span id="uploadfile_error">File not found</span>
                 </div>
                 <div id="form_control">
                     <label for="color">
@@ -221,10 +221,10 @@
                     </label><br>
                 </div>
                 <input type="submit" name="submit" value="Submit">
-                <!--<input type="reset" name="reset" value="Clear">
-                <input type="button" onclick="alert('Welcome to this web page')" value="Click Me!">-->
             </form>
-        </div>        
+        </div>  
+        <script src="/js/script.js"></script>      
     </body>
-    <script src="/js/form.js"></script>
+    
 </html>
+

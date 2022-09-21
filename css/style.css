@@ -17,7 +17,7 @@ body{
     border: transparent;
     width: 500px;
     background-color: rgba(109, 101, 101, 0.3);
-    margin: 80px 0px 100px 500px;
+    margin: 80px 0px 100px 440px;
     box-shadow: 0 0 15px rgb(97, 95, 95);
     color: rgb(0, 0, 0);
     padding: 30px;
@@ -41,16 +41,20 @@ input{
 
 input[type=text] {
     border-radius: 4px;
-    border: 2px solid rgb(187, 180, 180);
+    /*border: 2px solid rgb(187, 180, 180);*/
     width: 445px;
     margin-left: 10px;
+}
+
+.red{
+    border:1px solid red;
 }
 
 input[type=search]{
     padding-left: 40px;
     width: 440px;
     border-radius: 4px;
-    border: 2px solid rgb(187, 180, 180);
+    /*border: 2px solid rgb(187, 180, 180);*/
     margin-left: 10px;
 }
 
@@ -64,7 +68,7 @@ input[type=search]{
 
 textarea{
     border-radius: 4px;
-    border: 2px solid rgb(187, 180, 180);
+   /* border: 2px solid rgb(187, 180, 180);*/
     width: 100%;
     margin-top: 5px;
     background-color: rgb(231, 226, 220);
@@ -72,7 +76,7 @@ textarea{
 
 input[type=date]{
     border-radius: 4px;
-    border: 2px solid rgb(187, 180, 180);
+    /*border: 2px solid rgb(187, 180, 180);*/
     margin-left: 10px;
     width: 200px;
 }
@@ -91,7 +95,7 @@ input[type=radio]{
 
 input[type=email]{
     border-radius: 4px;
-    border: 2px solid rgb(187, 180, 180);
+    /*border: 2px solid rgb(187, 180, 180);*/
     margin: 0px 0px 10px 10px;
     width: 445px;
 }
@@ -99,13 +103,13 @@ input[type=email]{
 input[type=password]{
     border-radius: 4px;
     width: 420px;
-    border: 2px solid rgb(187, 180, 180);
+    /*border: 2px solid rgb(187, 180, 180);*/
     margin: 0px 0px 10px 10px;
 }
 
 input[type=number], input[type=tel]{
     border-radius: 4px;
-    border: 2px solid rgb(187, 180, 180);
+    /*border: 2px solid rgb(187, 180, 180);*/
     margin: 0px 0px 10px 10px;
     width: 380px;
 }
@@ -126,21 +130,21 @@ input[type=range]{
 
 input[type=month],input[type=week],input[type=datetime-local]{
     border-radius: 4px;
-    border: 2px solid rgb(187, 180, 180);
+    /*border: 2px solid rgb(187, 180, 180);*/
     margin:10px;
     width: 200px;    
 }
 
 input[type=url]{
     border-radius: 4px;
-    border: 2px solid rgb(187, 180, 180);
+   /* border: 2px solid rgb(187, 180, 180);*/
     margin:10px;
     width: 395px;
 }
 
 input[type=datetime]{
     border-radius: 4px;
-    border: 2px solid rgb(187, 180, 180);
+  /*  border: 2px solid rgb(187, 180, 180);*/
     margin:10px;
 }
 
@@ -198,51 +202,51 @@ input[type=submit]:hover{
     background-color: rgb(0, 26, 255);
 }
 
-.name_error, .address_error, .email_error, .tel_error {
+#name_div, #address_div, #email_div, #tel_div {
     margin:10px 0px 5px 200px;
-    
+    color: red;
+    visibility:hidden;
 }
 
-.required_error, .week_error, .local_error{
+#required_div, #week_div, #local_div{
     position: absolute;
     margin:-34px 0px 0px 250px;
+    color: red;
+    visibility:hidden;
 }
 
-.date_error{
+#date_div{
     margin:0px 0px 5px 80px;
+    color: red;
+    visibility:hidden;
 }
 
-.pswd_error{
+#pswd_div{
     margin: 0px 0px 5px 270px;
+    color: red;
+    visibility:hidden;
 }
 
-.number_error{
+#number_div{
     margin: 0px 0px 5px 245px;
+    color: red;
+    visibility:hidden;
 }
 
-.url_error{
+#url_div{
     margin: 0px 0px 5px 310px;
+    color: red;
+    visibility:hidden;
 }
 
-.datetime_error{
+#datetime_div{
     margin: 0px 0px 5px 110px;
+    color: red;
+    visibility:hidden;
 }
 
-.uploadfile_error{
+#uploadfile_div{
     margin: 0px 0px 5px 330px;
+    color: red;
+    visibility:hidden;
 }
-
-/*#form_control span{
-    visibility: hidden;
-}*/
-
-#form_control.success input{
-    border-color: 2px solid rgb(13, 97, 13);
-}
-
-#form_control.error input{
-    border-color: 2px solid red;
-}
-
-
-
