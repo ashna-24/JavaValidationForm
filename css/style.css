@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:pink;
+    
+}
+
+.form{
+    border-top: 2px;
+    border-left: 2px;
+    border-bottom:2px;
+    border-right: 2px;
+    border-radius: 8px;
+    border: transparent;
+    width: 350px;
+    background-color: rgba(109, 101, 101, 0.3);
+    margin: 80px 0px 100px 423px;
+    box-shadow: 0 0 15px rgb(97, 95, 95);
+    color: rgb(0, 0, 0);
+    padding: 30px;
+}
+
+input{
+    padding: 5px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: rgb(231, 226, 220);
+}
+
+input[type=text] {
+    border-radius: 4px;
+    width: 329px;
+}
+
+.gender label{
+    margin-right: 15px;
+}
+
+textarea{
+    border-radius: 4px;
+    width: 340px;
+    margin-top: 5px;
+    background-color: rgb(231, 226, 220);
+}
+
+input[type=date]{
+    border-radius: 4px;
+    width: 325px;
+}
+
+.age, .check{
+    margin-top: 15px;
+}
+
+.age span{
+    margin-right:140px;
+}
+
+.check span{
+    margin-right:85px;
+}
+
+.age label, .check label{
+    margin-right: 20px;
+}
+
+input[type=radio]{
+    accent-color: rgb(12, 64, 236);
+}
+
+input[type=email]{
+    border-radius: 4px;
+    width: 330px;
+}
+
+input[type=password]{
+    border-radius: 4px;
+    width: 333px;
+}
+
+input[type=number]{
+    border-radius: 4px;
+    width: 333px;
+}    
+
+input[type=tel]{
+    border-radius: 4px;
+    width: 332px;
+}
+
+.qualification{
+    padding: 5px;
+    background-color: rgb(231, 226, 220);
+    width: 342px;
+    border-radius: 4px;
+    border: 2px solid rgb(187, 180, 180);
+}
+
+input[type=range]{
+    accent-color: rgb(32, 80, 238);
+}
+
+input[type=month]{
+    border-radius: 4px;
+    width: 320px;    
+}
+
+input[type=week]{
+   border-radius: 4px;
+    width: 320px;    
+} 
+
+input[type=datetime-local]{
+   border-radius: 4px;
+    width: 318px;    
+}    
+
+input[type=datetime]{
+    border-radius: 4px;
+    width:320px;
+}
+
+.proof{
+    margin-top: 20px;
+}
+
+.proof label{
+    margin-right:15px;
+}
+
+.proof span{
+   margin:10px 113px 10px 0px;
+}
+
+.upload{
+    border-top: 2px solid rgb(184, 177, 177);
+    border-left: 2px solid rgb(184, 177, 177);
+    border-bottom:2px solid rgb(184, 177,177);
+    border-right: 2px solid rgb(184, 177, 177);
+    border-radius: 3px;
+    padding: 10px;
+    margin: 20px 0px 10px 0px;
+}
+
+.upload input{
+    background-color: transparent;
+}
+
+input[type=file]{
+    padding: 10px;
+}
+
+input[type=submit], input[type=reset]{
+    border-top: 2px;
+    border-left: 2px;
+    border-bottom:2px;
+    border-right: 2px;
+    border-radius: 5px;
+    width:  173px;
+    margin-top: 20px;
+    padding: 15px;
+    border: transparent;
+    color:white;
+    font-size: 15px;
+    background-color: rgb(6, 110, 247);
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+    background-color: rgb(0, 26, 255);
+}
+
+#name_div, 
+#address_div, 
+#email_div, 
+#tel_div,
+#qualify_div,
+#required_div,
+#week_div, 
+#local_div,
+#age_div,
+#proof_div,
+#gender_div,
+#date_div,
+#pswd_div, 
+#datetime_div, 
+#number_div,
+#uploadfile_div{
+    color: red;
+    visibility:hidden;   
+}
