@@ -4,8 +4,8 @@
 }
 
 body{
-    background-size: contain;
-    background-repeat: repeat;
+    background-color:pink;
+    
 }
 
 .form{
@@ -15,9 +15,9 @@ body{
     border-right: 2px;
     border-radius: 8px;
     border: transparent;
-    width: 500px;
+    width: 350px;
     background-color: rgba(109, 101, 101, 0.3);
-    margin: 80px 0px 100px 440px;
+    margin: 80px 0px 100px 423px;
     box-shadow: 0 0 15px rgb(97, 95, 95);
     color: rgb(0, 0, 0);
     padding: 30px;
@@ -25,68 +25,46 @@ body{
 
 input{
     padding: 5px;
-    margin-bottom: 5px;
+    margin: 10px 0px;
     border-radius: 5px;
-    background-color: rgb(231, 226, 220);
-}
-
-.salutation{
-    padding: 5px;
-    margin: 20px 10px;
-    width: 130px;
-    border-radius: 4px;
-    border: 2px solid rgb(187, 180, 180);
     background-color: rgb(231, 226, 220);
 }
 
 input[type=text] {
     border-radius: 4px;
-    /*border: 2px solid rgb(187, 180, 180);*/
-    width: 445px;
-    margin-left: 10px;
-}
-
-.red{
-    border:1px solid red;
-}
-
-input[type=search]{
-    padding-left: 40px;
-    width: 440px;
-    border-radius: 4px;
-    /*border: 2px solid rgb(187, 180, 180);*/
-    margin-left: 10px;
+    width: 329px;
 }
 
 .gender label{
-    margin-left: 15px;
-}
-
-.address{
-    margin-top: 10px;
+    margin-right: 15px;
 }
 
 textarea{
     border-radius: 4px;
-   /* border: 2px solid rgb(187, 180, 180);*/
-    width: 100%;
+    width: 340px;
     margin-top: 5px;
     background-color: rgb(231, 226, 220);
 }
 
 input[type=date]{
     border-radius: 4px;
-    /*border: 2px solid rgb(187, 180, 180);*/
-    margin-left: 10px;
-    width: 200px;
+    width: 325px;
 }
 
 .age, .check{
     margin-top: 15px;
 }
 
+.age span{
+    margin-right:140px;
+}
+
+.check span{
+    margin-right:85px;
+}
+
 .age label, .check label{
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 input[type=radio]{
@@ -95,69 +73,66 @@ input[type=radio]{
 
 input[type=email]{
     border-radius: 4px;
-    /*border: 2px solid rgb(187, 180, 180);*/
-    margin: 0px 0px 10px 10px;
-    width: 445px;
+    width: 330px;
 }
 
 input[type=password]{
     border-radius: 4px;
-    width: 420px;
-    /*border: 2px solid rgb(187, 180, 180);*/
-    margin: 0px 0px 10px 10px;
+    width: 333px;
 }
 
-input[type=number], input[type=tel]{
+input[type=number]{
     border-radius: 4px;
-    /*border: 2px solid rgb(187, 180, 180);*/
-    margin: 0px 0px 10px 10px;
-    width: 380px;
+    width: 333px;
+}    
+
+input[type=tel]{
+    border-radius: 4px;
+    width: 332px;
 }
 
 .qualification{
     padding: 5px;
-    margin: 10px 10px;
     background-color: rgb(231, 226, 220);
-    width: 390px;
+    width: 342px;
     border-radius: 4px;
     border: 2px solid rgb(187, 180, 180);
 }
 
 input[type=range]{
-    margin: 10px 0px 10px 10px;
     accent-color: rgb(32, 80, 238);
 }
 
-input[type=month],input[type=week],input[type=datetime-local]{
+input[type=month]{
     border-radius: 4px;
-    /*border: 2px solid rgb(187, 180, 180);*/
-    margin:10px;
-    width: 200px;    
+    width: 320px;    
 }
 
-input[type=url]{
-    border-radius: 4px;
-   /* border: 2px solid rgb(187, 180, 180);*/
-    margin:10px;
-    width: 395px;
-}
+input[type=week]{
+   border-radius: 4px;
+    width: 320px;    
+} 
+
+input[type=datetime-local]{
+   border-radius: 4px;
+    width: 318px;    
+}    
 
 input[type=datetime]{
     border-radius: 4px;
-  /*  border: 2px solid rgb(187, 180, 180);*/
-    margin:10px;
+    width:320px;
 }
 
 .proof{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .proof label{
-    margin-left: 10px;
+    margin-right:15px;
 }
 
-.proof input{
-    margin-right: 10px;
+.proof span{
+   margin:10px 113px 10px 0px;
 }
 
 .upload{
@@ -171,7 +146,6 @@ input[type=datetime]{
 }
 
 .upload input{
-    margin:50px 110px;
     background-color: transparent;
 }
 
@@ -179,17 +153,13 @@ input[type=file]{
     padding: 10px;
 }
 
-input[type=color]{
-    width:25px;
-}
-
-input[type=submit]{
+input[type=submit], input[type=reset]{
     border-top: 2px;
     border-left: 2px;
     border-bottom:2px;
     border-right: 2px;
     border-radius: 5px;
-    width:100%;
+    width:  173px;
     margin-top: 20px;
     padding: 15px;
     border: transparent;
@@ -198,55 +168,26 @@ input[type=submit]{
     background-color: rgb(6, 110, 247);
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover, input[type=reset]:hover{
     background-color: rgb(0, 26, 255);
 }
 
-#name_div, #address_div, #email_div, #tel_div {
-    margin:10px 0px 5px 200px;
-    color: red;
-    visibility:hidden;
-}
-
-#required_div, #week_div, #local_div{
-    position: absolute;
-    margin:-34px 0px 0px 250px;
-    color: red;
-    visibility:hidden;
-}
-
-#date_div{
-    margin:0px 0px 5px 80px;
-    color: red;
-    visibility:hidden;
-}
-
-#pswd_div{
-    margin: 0px 0px 5px 270px;
-    color: red;
-    visibility:hidden;
-}
-
-#number_div{
-    margin: 0px 0px 5px 245px;
-    color: red;
-    visibility:hidden;
-}
-
-#url_div{
-    margin: 0px 0px 5px 310px;
-    color: red;
-    visibility:hidden;
-}
-
-#datetime_div{
-    margin: 0px 0px 5px 110px;
-    color: red;
-    visibility:hidden;
-}
-
+#name_div, 
+#address_div, 
+#email_div, 
+#tel_div,
+#qualify_div,
+#required_div,
+#week_div, 
+#local_div,
+#age_div,
+#proof_div,
+#gender_div,
+#date_div,
+#pswd_div, 
+#datetime_div, 
+#number_div,
 #uploadfile_div{
-    margin: 0px 0px 5px 330px;
     color: red;
-    visibility:hidden;
+    visibility:hidden;   
 }

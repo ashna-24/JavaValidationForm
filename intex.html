@@ -4,227 +4,172 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        
+        <link rel="stylesheet" href="css/style.css">       
         <title>Form</title>
+        <script src="js/script.js"></script>
     </head>
-    <body background="assets/pic.jpg">
+    <body>
         <div class="form">
-            <form action="" method="post" name="myform"  autocomplete="off" onsubmit="ValidateUserInputs()">
-                <label for="search">
-                    Search
-                    <input type="search" name="search">
-                </label><br>
-                <label for="salutation"> Salutation
-                    <select class="salutation">
-                        <option>Select</option>
-                        <option>Mr.</option>
-                        <option>Ms.</option>
-                        <option>Mrs</option>
-                        <option>Dr.</option>
-                        <option>Prof.</option>
-                    </select>
-                </label>
+            <form action="" method="post" name="myform"  autocomplete="off" onsubmit="return validateform()">
                 <div id="form_control">
-                    <label for="name">
-                        Name
-                        <input type="text" name="username" class="name"><br>
-                    </label>
+                    <label for="name">Name</label><br>
+                    <input type="text"  name="uname" class="uname" id="uname" onblur="validateform()">  
                     <span id="name_div">Name not found</span>
                 </div>
                 <div id="form_control">
                     <div class="gender">
-                        Gender
+                        Gender<br>
                         <label for="male">
-                            <input type="radio" name="gender">
+                            <input type="radio" name="gender" onblur="validateform()">
                             Male
                         </label>
                         <label for="Female">
-                            <input type="radio" name="gender">
+                            <input type="radio" name="gender" onblur="validateform()">
                             Female
                         </label>
                         <label for="others">
-                            <input type="radio" name="gender">
+                            <input type="radio" name="gender" onblur="validateform()">
                             Others
                         </label>
-                    </div><br>
+                    </div>
+                    <span id="gender_div">Gender not found</span>
                 </div>
                 <div id="form_control">
-                    <label for="address">
-                        Address<br>
-                        <textarea name="address" rows="5" cols="20" class="address"></textarea><br>
-                    </label><br>
+                    <label for="address">Address</label><br>
+                    <textarea name="address" rows="2" cols="1" class="address" onblur="validateform()"></textarea>
                     <span id="address_div">Address not found</span>
                 </div>
                 <div class="form_control">
-                    <label for="dob">
-                        Date of Birth
-                        <input type="date" name="date" class="date">
-                    </label><br>
-                    <span id="date_div">DOB is not found</span>
+                    <label for="dob">Date of Birth</label><br>        
+                    <input type="date" name="date" onblur="validateform()">                    
+                    <span id="date_div"></span>
                 </div>
                 <div id="form_control">
-                    <div class="age">Age                
+                    <div class="age">
+                        Age<br>                
                         <label for="18-24">
-                            <input type="radio" name="age" value="18-24">
+                            <input type="radio" name="age" value="18-24" onblur="validateform()">
                             18-24
                         </label>          
                         <label for="24-35">
-                            <input type="radio" name="age" value="24-35">
+                            <input type="radio" name="age" value="24-35" onblur="validateform()">
                             24-35
                         </label>               
                         <label for="35-50">
-                            <input type="radio" name="age" value="35-50">
+                            <input type="radio" name="age" value="35-50" onblur="validateform()">
                             35-50
                         </label>                
                         <label for="Above 50">
-                            <input type="radio" name="age" value="Above 50">
+                            <input type="radio" name="age" value="Above 50" onblur="validateform()">
                             Above 50
                         </label>
-                    </div><br>
+                    </div>
+                    <span id="age_div">Age not found</span>
                 </div>
                 <div id="form_control">
-                    <label for="mail">
-                        Email
-                        <input type="email" name="email" class="email">
-                    </label><br>
+                    <label for="mail">Email</label><br>                        
+                    <input type="email" name="email" class="email" onblur="validateform()">                    
                     <span id="email_div">Email not found</span>
                 </div>
                 <div id="form_control">
-                    <label for="password">
-                        Password
-                        <input type="password" name="password" class="password">
-                    </label><br>
+                    <label for="password">Password </label> <br>                       
+                    <input type="password" name="password" class="password" onblur="validateform()">                   
                     <span id="pswd_div">Password not found</span>
                 </div>
                 <div id="form_control">
-                    <label for="number">
-                        Phone No.
-                        <input type="number" name="number" min="1" max="10" class="number">
-                    </label><br>
-                    <span id="number_div">Phone No. not found</span>
+                    <label for="number"> Phone No.</label><br>                      
+                    <input type="number" name="number" min="1" max="10" class="number" onblur="validateform()">                    
+                    <span id="number_div">Number not found</span>
                 </div>
                 <div id="form_control">
-                    <label for="tel">
-                        Telephone No.
-                        <input type="tel" name="telephone" class="telephone">
-                    </label><br>
-                    <span id="tel_div">Telephone no.not found</span>
+                    <label for="tel">Telephone No.</label><br>                        
+                    <input type="tel" name="telephone" class="telephone" onblur="validateform()">                    
+                    <span id="tel_div">Number not found</span>
                 </div>
                 <div id="form_control">
-                    <label for="qualification"> Qualification
-                        <select class="qualification" name="study">
-                            <option>Select your Qualification</option>
-                            <option>Under Graduate</option>
-                            <option>Graduate</option>
-                            <option>Post Graduate</option>
-                            <option>Others</option>
-                        </select>
-                    </label><br>
+                    <label for="qualification"> Qualification </label><br>
+                    <select class="qualification" name="study">
+                         <option><!--Select your Qualification--></option>
+                         <option>Under Graduate</option>
+                         <option>Graduate</option>
+                         <option>Post Graduate</option>
+                         <option>Others</option>
+                    </select>                   
+                    <span id="qualify_div">Qualification not found</span>
                 </div>
                 <div id="form_control">
-                    <div class="check">Experienced
+                    <div class="check">
+                       Experienced<br>
                         <label for="yes">
-                            <input type="radio" name="experience" value="Yes">
+                            <input type="radio" name="experience" value="Yes" onblur="validateform()">
                             Yes
                         </label>
                         <label for="no">
-                            <input type="radio" name="experience" value="No">
+                            <input type="radio" name="experience" value="No" onblur="validateform()">
                             No
                         </label>
                     </div>
                 </div>
                 <div id="form_control">
-                    <label for="range">
-                        Experience Range
-                        <input type="range" name="range" min="1" max="10">
-                    </label><br>
+                    <label for="range"> Experience Range</label><br>                      
+                    <input type="range" name="range" min="1" max="10" onblur="validateform()">                    
                 </div>
                 <div id="form_control">
-                    <label for="month">
-                        Joining Month
-                        <input type="month" name="month" class="month">
-                    </label><br>
+                    <label for="month">Joining Month </label><br>                        
+                    <input type="month" name="month" class="month" onblur="validateform()">                   
                     <span id="required_div">Month not found</span>
                 </div>
                 <div id="form_control">
-                    <label for="week">
-                        Joining Week
-                        <input type="week" name="week" class="week">
-                    </label><br>
+                    <label for="week">Joining Week </label><br>                        
+                    <input type="week" name="week" class="week" onblur="validateform()">                   
                     <span id="week_div">Week not found</span>
                 </div>
                 <div id="form_control">
-                    <label for="url">
-                        Github URL
-                        <input type="url" name="url" class="url">
-                    </label><br>
-                    <span id="url_div">URL not found</span>
-                </div>
-                <div id="form_control">
-                    <label for="datetime">
-                        Date time
-                        <input type="datetime" name="datetime" class="datetime">
-                    </label><br>
+                    <label for="datetime"> Date time</label><br>                       
+                    <input type="datetime" name="datetime" class="datetime" onblur="validateform()">
                     <span id="datetime_div">Datetime not found</span>
                 </div>
                 <div id="form_control">
-                    <label for="local">
-                        Local Date Time
-                        <input type="datetime-local" name="localdatetime" class="localdatetime">
-                    </label><br>
+                    <label for="local"> Local Date Time</label><br>                     
+                    <input type="datetime-local" name="localdatetime" class="localdatetime" onblur="validateform()">                    
                     <span id="local_div">Local Datetime not found</span>
                 </div>
                 <div id="form_control">
                     <div class="proof">
-                        Id Proof<br><br>
+                        Id Proof<br>
                         <label for="aadhar">
-                            <input type="checkbox" name="proof">
+                            <input type="checkbox" name="proof" onblur="validateform()">
                             Aadhar
                         </label>
                         <label for="license">
-                            <input type="checkbox" name="proof">
+                            <input type="checkbox" name="proof" onblur="validateform()">
                             License
                         </label>
                         <label for="passport">
-                            <input type="checkbox" name="proof">
+                            <input type="checkbox" name="proof" onblur="validateform()">
                             Passport
                         </label>
                         <label for="pancard">
-                            <input type="checkbox" name="proof">
+                            <input type="checkbox" name="proof" onblur="validateform()">
                             Pan Card
                         </label>
-                        <label for="voterid">
-                            <input type="checkbox" name="proof">
-                            Voter Id
-                        </label>
                     </div>
+                    <span id="proof_div">Id proof not found</span>
                 </div>
                 <div id="form_control">
                     <label for="upload">
                         <div class="upload">
                             Upload valid Id proof<br>
-                            <input type="file" name="uploadfile" class="uploadfile">
-                        </div><br>
+                            <input type="file" name="uploadfile" class="uploadfile" onblur="validateform()">
+                        </div>
                     </label>
-                    <span id="uploadfile_error">File not found</span>
+                    <span id="uploadfile_div">File not found</span>
                 </div>
-                <div id="form_control">
-                    <label for="color">
-                        Select your favourite color
-                        <input type="color" name="color">
-                    </label><br>
-                </div>
-                <div id="form_control">
-                    <label for="img">
-                        <input type="image" src="assets/submit.png" alt="Submit" width="48" height="48">
-                    </label><br>
-                </div>
-                <input type="submit" name="submit" value="Submit">
+               
+                   <input type="submit" id="submit" value="Submit">
+                   <input type="reset" value="Reset">
             </form>
-        </div>  
-        <script src="/js/script.js"></script>      
+        </div>      
     </body>
-    
+   
 </html>
-
